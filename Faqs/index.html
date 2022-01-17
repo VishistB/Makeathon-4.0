@@ -3,47 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FAQs</title>
     <link rel="Stylesheet" href="assets/css/index.css" />
   </head>
   <body>
     <section class="Page-contain">
+      <div></div>
       <!-- Heading page -->
       <nav class="Heading">
-        <div class="center-align">
+        <div class="center-alignhead">
           <h1>FAQs</h1>
         </div>
       </nav>
+
       <!-- Question page -->
       <div class="Question-Container">
-        <!-- question1 -->
-        <div class="Question" >
-            What is a Hackathon?
-            <i class="arrow down"></i>
-            <br>
-            <div id="Hidden" class="dropdown-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eligendi impedit, aperiam veritatis in voluptas a facilis aspernatur beatae dicta nobis labore nam cumque magni eum  
+        <div class="accordion">
+          <!-- span to target fix closing accordion -->
+          <span class="target-fix" id="accordion"></span>
+           
+          <!-- First Accoridon Option -->
+          <div class="acc">
+              <!-- span to target fix accordion -->
+              <span class="target-fix" id="accordion1"></span>
+              
+              <!-- Link to open accordion, hidden when open --> 
+              <a href="#accordion1" id="open-accordion1" title="open">What is a Hackathon?</a>
+              
+              <!-- Link to close accordion, hidden when closed -->
+              <a href="#accordion" id="close-accordion1" title="close">What is a Hackathon?</a> 
+              
+              <!-- Accorion content goes in this div -->
+              <div class="accordion-content">
+                  <p>An Event where you solve problem statments in a time period (here 24hrs)</p>
+              </div>
+          </div>
+  
+          <!-- Second Accoridon Option -->
+          <div class = "acc">
+              <span class="target-fix" id="accordion2"></span>
+              <a href="#accordion2" id="open-accordion2" title="open">Second Accordion</a>
+              <a href="#accordion" id="close-accordion2" title="close">Second Accordion</a>
+              <div class="accordion-content">
+                  <p>Accordion 2 Content.</p>       
+              </div>
+          </div>
+  
+          <!-- Third Accoridon Option -->
+          <div class="acc">
+              <span class="target-fix" id="accordion3"></span>
+              <a href="#accordion3" id="open-accordion3" title="open">Third Accordion</a>
+              <a href="#accordion" id="close-accordion3" title="close">Third Accordion</a>
+              <div class="accordion-content">
+                  <p>Accordion 3 Content</p>
+              </div>
+          </div>
+
+          <!-- Fourth acc -->
+          <div class = "acc">
+            <span class="target-fix" id="accordion4"></span>
+            <a href="#accordion4" id="open-accordion4" title="open">Fourth Accordion</a>
+            <a href="#accordion" id="close-accordion4" title="close">Fourth Accordion</a>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat facere ratione neque quis reprehenderit, laudantium nulla officiis provident tenetur pariatur totam! Doloribus, eaque quaerat quas ad nisi corrupti aperiam nemo reprehenderit tempora voluptate dicta commodi nobis </p>
             </div>
-            
         </div>
-
-        <!-- question2 -->
-        <div class="Question">
-          HI wassup2?
-          <i class="arrow down"></i>
-        </div>
-
-        <!-- question3 -->
-
-        <div class="Question">
-          <div id="myDropdown" class="dropdown-content">Hello everyone</div>
-          HI wassup3?
-          <i class="arrow down"></i>
-        </div>
-
-        <!-- Trial  -->
-
-        
+      </div>
+      </div>
     </section>
+
+    
   </body>
 </html>
