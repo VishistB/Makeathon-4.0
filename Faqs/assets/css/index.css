@@ -14,8 +14,10 @@
 }
 .Page-contain {
   background-color: #061a05;
-  height: 110vh;
-  width: 100vw;
+  min-height: 120vh;
+  height: 120%;
+  width: 100%;
+  padding-bottom: 0.1%;
 }
 
 H1 {
@@ -66,8 +68,6 @@ ________________________________________*/
   border-radius: 7px;
 }
 
-
-
 [id*="close-accordion"] {
   display: none;
 }
@@ -80,6 +80,7 @@ ________________________________________*/
   text-shadow: none;
 }
 
+
 [id*="open-accordion"]:after, [id*="close-accordion"]:after {
   content: "";
   border-left: 1.5vh solid transparent;
@@ -89,9 +90,9 @@ ________________________________________*/
   padding-top: 2vh;
   right: 2vw;
   top: 4vh;
-  z-index: 999;
-  transform: rotate(-0deg);
-  -webkit-transform: rotate(-0deg);
+  /* z-index: 999; */
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
   
 }
 
@@ -109,13 +110,14 @@ ________________________________________*/
   background: rgba(3, 49, 9, 1);
   height: 0;
   margin: -1px auto 0;
+  margin-bottom: 3vh;
   padding: 0 2.5%;
   position: relative;     
   overflow: hidden;
   width: 66.5vw;
-  transition: all 0.1s ease;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   border-radius: 7px;
   opacity: 0.8;
 }
